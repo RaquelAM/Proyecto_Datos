@@ -1,11 +1,18 @@
 Info personal [archivo enpecyt2015_cs.dbf]
 SEX sexo
+EDA edad
 ENT entidad
 
 Info academica [archivo enpecyt2015_cb1.dbf]
+*******************
+****Estas ya no*****
+*******************
 S3P3 = 2 (te pidieron secundaria)
 
 S3P7 = 1 (actualmente estudias)
+*******************
+*******************
+*******************
 
 S3P7_1_1 --- S3P7_1_2  = 1 (te gustaría ser)
 
@@ -22,16 +29,16 @@ S4P11_1 ---  S4P11_17 , S4P11_ES
 11.¿Consulta usted en Internet información acerca de. . .
 
 S4P17_1 --- S4P17_7
-17. LOS JÓVENES Y LAS CARRERAS CIENTÍFICAS, Hay quienes dicen que los jóvenes en México están poco interesados en estudiar carreras científicas, como biología,
++17. LOS JÓVENES Y LAS CARRERAS CIENTÍFICAS, Hay quienes dicen que los jóvenes en México están poco interesados en estudiar carreras científicas, como biología,
 matemáticas o física. De las siguientes razones ¿cuáles cree usted que son las tres principales?
 
 [archivo enpecyt2013_cb2.dbf]
 
 S4P23_1 --- S4P23_12
-23. EL PAPEL DE LA CIENCIA Y LA TECNOLOGÍA. Dígame por favor si está muy de acuerdo, de acuerdo, en desacuerdo o muy en desacuerdo, con las siguientes afi rmaciones
++23. EL PAPEL DE LA CIENCIA Y LA TECNOLOGÍA. Dígame por favor si está muy de acuerdo, de acuerdo, en desacuerdo o muy en desacuerdo, con las siguientes afi rmaciones
 como las que podría usted encontrar en un periódico o revista.
 
-S4P28_1 --- S4P28_6
++S4P28_1 --- S4P28_6
 28. LOS JÓVENES Y LA CIENCIA
 
 S4P29 --- S4P29_6

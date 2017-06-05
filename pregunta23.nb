@@ -1,0 +1,1284 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     40335,       1276]
+NotebookOptionsPosition[     36815,       1155]
+NotebookOutlinePosition[     37149,       1170]
+CellTagsIndexPosition[     37106,       1167]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"Pregunta", " ", "23", " ", "op", " ", "1"}], ",", " ", 
+   RowBox[{"para", " ", "un", " ", "estado"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.705681540346608*^9, 3.7056815545218554`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Position", "[", 
+  RowBox[{"nvariable", ",", " ", "\"\<S4P23_1,C,1\>\""}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", "44", "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.705684672446525*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Position", "[", 
+  RowBox[{"nvariable", ",", " ", "\"\<S4P23_12,C,1\>\""}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", "55", "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.7056846801930017`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Para", " ", "la", " ", "opcion", " ", "1"}], "*)"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"edo", "=", 
+   RowBox[{"estadosSI", "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.705681574313273*^9, 3.7056815829546947`*^9}, 
+   3.705682972295198*^9, {3.705683915153715*^9, 3.705683920518536*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edo", "[", 
+  RowBox[{"[", 
+   RowBox[{"1", ",", "1"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7056830103654623`*^9, 3.705683041534542*^9}}],
+
+Cell[BoxData["\<\"02\"\>"], "Output",
+ CellChangeTimes->{{3.705683014820225*^9, 3.7056830419116583`*^9}, 
+   3.705684006516686*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"re23op1", "=", 
+  RowBox[{"edo", "[", 
+   RowBox[{"[", 
+    RowBox[{"All", ",", "44"}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.705681602033691*^9, 3.7056816182433777`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"1\"\>", ",", "\<\"1\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.705681618961993*^9, 3.7056840065781918`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f23op1", "=", 
+  RowBox[{"edo", "[", 
+   RowBox[{"[", 
+    RowBox[{"All", ",", 
+     RowBox[{"-", "1"}]}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.705681627249608*^9, 3.705681643895731*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"17821\"\>", ",", "\<\"9349\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.70568164474741*^9, 3.705684006652364*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"cal", "=", 
+  RowBox[{"Transpose", "[", 
+   RowBox[{"{", 
+    RowBox[{"re23op1", ",", "f23op1"}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.705681647939289*^9, 3.705681671233584*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"1\"\>", ",", "\<\"17821\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"1\"\>", ",", "\<\"9349\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.705681671576437*^9, 3.7056840067110367`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gdata2", "=", 
+  RowBox[{"GatherBy", "[", 
+   RowBox[{"cal", ",", 
+    RowBox[{
+     RowBox[{"#", "[", 
+      RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.705681696741583*^9, 3.70568169897132*^9}, 
+   3.705681874995932*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\<\"1\"\>", ",", "\<\"17821\"\>"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\<\"1\"\>", ",", "\<\"9349\"\>"}], "}"}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.705681699545542*^9, 3.705681876443987*^9, 
+  3.705684006763402*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gdata2", "[", 
+  RowBox[{"[", 
+   RowBox[{"1", ",", "1"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.705683831838531*^9, 3.705683843409387*^9}, {
+  3.705683894360558*^9, 3.705683904295807*^9}, {3.705683942104273*^9, 
+  3.7056840022214518`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"1\"\>", ",", "\<\"17821\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.705683838118966*^9, 3.705683844198107*^9}, 
+   3.705683895678722*^9, 3.705684006818713*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"res", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"edo", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"Map", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"#", "[", 
+          RowBox[{"[", 
+           RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+         RowBox[{"ToExpression", "[", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"Total", "[", 
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], "]"}]}], 
+        "}"}], "&"}], ",", "gdata2"}], "]"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.7056817608500443`*^9, 3.705681765096538*^9}, {
+  3.705681797312997*^9, 3.705681806826852*^9}, {3.705681855592944*^9, 
+  3.705681862313747*^9}, {3.705682049822948*^9, 3.7056821721418877`*^9}, {
+  3.7056826743909073`*^9, 3.705682676460627*^9}, {3.70568299761029*^9, 
+  3.70568302555399*^9}, {3.705684012209764*^9, 3.705684012522094*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"{", 
+     RowBox[{"\<\"1\"\>", ",", "27170"}], "}"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.705682172929257*^9, 3.705682676954299*^9, {3.7056830042176733`*^9, 
+   3.705683026112563*^9}, {3.7056840068745728`*^9, 3.7056840141405087`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"numEdos", "=", 
+  RowBox[{"Range", "[", 
+   RowBox[{"estadosSI", "//", "Length"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.705683074228545*^9, 3.70568309110736*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", "8", 
+   ",", "9", ",", "10", ",", "11", ",", "12", ",", "13", ",", "14", ",", 
+   "15"}], "}"}]], "Output",
+ CellChangeTimes->{3.705683091448151*^9, 3.705684006881318*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "1"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.705684747173586*^9, 3.70568475028017*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op1", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "44"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op1", ",", "resD"}], "]"}], ";"}], "\[IndentingNewLine]",
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.705683052252915*^9, 3.705683058184161*^9}, {
+  3.705683107234079*^9, 3.7056833300309553`*^9}, {3.7056833685170097`*^9, 
+  3.705683526523015*^9}, {3.705683566870449*^9, 3.7056836779434023`*^9}, {
+  3.705683712122478*^9, 3.705683782931773*^9}, {3.705683863349902*^9, 
+  3.705683873100821*^9}, {3.705684037995124*^9, 3.705684084954702*^9}, {
+  3.705684635201549*^9, 3.705684637760969*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op1", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.705683333179379*^9, 3.7056833408403063`*^9}, {
+   3.705684091338606*^9, 3.705684098244977*^9}, {3.705684554345809*^9, 
+   3.705684558768342*^9}, 3.70568463950618*^9, {3.705684820665501*^9, 
+   3.70568482225384*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"{", 
+     RowBox[{"\<\"1\"\>", ",", "27170"}], "}"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.705683337791905*^9, 3.705683341223906*^9}, 
+   3.705684006980488*^9, {3.7056840666342077`*^9, 3.705684098648085*^9}, 
+   3.7056845593672657`*^9, 3.705684643472803*^9, 3.705684822860965*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "2"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.70568476267994*^9, 3.705684766110786*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op2", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "45"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op2", ",", "resD"}], "]"}], ";"}], "\[IndentingNewLine]",
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.705684770975953*^9, 3.705684788385544*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op2", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.705684800455365*^9, 3.705684828632962*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"2\"\>", ",", "17821"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1\"\>", ",", "9349"}], "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.705684817265143*^9, 3.705684829123412*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "3"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7056849846559668`*^9, 3.70568498951577*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op3", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "46"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op3", ",", "resD"}], "]"}], ";"}], "\[IndentingNewLine]",
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7056849996646433`*^9, 3.705685011091646*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op3", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.705685018560063*^9, 3.705685026569161*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"2\"\>", ",", "17821"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1\"\>", ",", "9349"}], "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.705685020593176*^9, 3.705685027086774*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "4"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.705685083957708*^9, 3.705685099752824*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op4", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "47"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op4", ",", "resD"}], "]"}], ";"}], "\[IndentingNewLine]",
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7056851039032297`*^9, 3.705685112335972*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op4", "[", 
+  RowBox[{"[", "2", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.705685115324929*^9, 3.705685128796945*^9}, {
+  3.705685172351138*^9, 3.705685172578236*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"06\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"4\"\>", ",", "10224"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"2\"\>", ",", "13526"}], "}"}]}], "}"}]}], "}"}]], "Output",\
+
+ CellChangeTimes->{{3.7056851245694838`*^9, 3.705685129305603*^9}, 
+   3.70568517325879*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "5"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.705685133056987*^9, 3.705685136263014*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op5", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "48"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op5", ",", "resD"}], "]"}], ";"}], "\[IndentingNewLine]",
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.705685141703445*^9, 3.70568514737077*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op5", "[", 
+  RowBox[{"[", "2", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.705685153212707*^9, 3.705685176165913*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"06\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"1\"\>", ",", "10224"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"2\"\>", ",", "13526"}], "}"}]}], "}"}]}], "}"}]], "Output",\
+
+ CellChangeTimes->{{3.705685155844398*^9, 3.7056851766870937`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "6"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.70568518659727*^9, 3.705685193147788*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op6", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "49"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op6", ",", "resD"}], "]"}], ";"}], "\[IndentingNewLine]",
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.705685197543347*^9, 3.7056852031343803`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op6", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.705685208206132*^9, 3.705685215347211*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"3\"\>", ",", "17821"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"2\"\>", ",", "9349"}], "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.7056852098838*^9, 3.7056852160245447`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "7"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.705685220010523*^9, 3.705685224107793*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op7", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "50"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op7", ",", "resD"}], "]"}], ";"}], "\[IndentingNewLine]",
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7056852345724688`*^9, 3.705685242987854*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op7", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7056852486449623`*^9, 3.7056852558769903`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"{", 
+     RowBox[{"\<\"2\"\>", ",", "27170"}], "}"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.705685251353198*^9, 3.705685256248217*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "8"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.705685267346616*^9, 3.7056852717011127`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op8", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "51"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op8", ",", "resD"}], "]"}], ";"}], "\[IndentingNewLine]",
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.705685275709703*^9, 3.7056852816342697`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op8", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.705685288895216*^9, 3.705685293990304*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"2\"\>", ",", "17821"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"3\"\>", ",", "9349"}], "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.705685290616125*^9, 3.7056852944238043`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "9"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7056853019290047`*^9, 3.7056853081412582`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op9", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "52"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op9", ",", "resD"}], "]"}], ";"}], "\[IndentingNewLine]",
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7056853119435472`*^9, 3.7056853225955257`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op9", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7056853303184013`*^9, 3.705685335833075*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"3\"\>", ",", "17821"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"2\"\>", ",", "9349"}], "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.705685331696909*^9, 3.705685336419223*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "10"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.705685344051557*^9, 3.7056853475274897`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op10", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "53"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op10", ",", "resD"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.705685355874099*^9, 3.7056853621295033`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op10", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7056853685434103`*^9, 3.7056853781569157`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"3\"\>", ",", "17821"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"2\"\>", ",", "9349"}], "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.7056853712476892`*^9, 3.705685378571225*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Opcion", " ", "11"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.70568540801779*^9, 3.705685423136836*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"edoSI23op11", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"edoD", "=", 
+     RowBox[{"estadosSI", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"reop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "54"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fop1", "=", 
+     RowBox[{"edoD", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"calD", "=", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"reop1", ",", "fop1"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"gdata2D", "=", 
+     RowBox[{"GatherBy", "[", 
+      RowBox[{"calD", ",", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "&"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"resD", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"edoD", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"#", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+            RowBox[{"ToExpression", "[", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Total", "[", 
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], 
+             "]"}]}], "}"}], "&"}], ",", "gdata2D"}], "]"}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"edoSI23op11", ",", "resD"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "numEdos"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.705685432295249*^9, 3.70568544302073*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"edoSI23op11", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.705685450101265*^9, 3.705685461172138*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"02\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"{", 
+     RowBox[{"\<\"2\"\>", ",", "27170"}], "}"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.70568545243613*^9, 3.70568546191967*^9}}]
+}, Open  ]]
+},
+WindowSize->{1301, 744},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 243, 5, 32, "Input"],
+Cell[CellGroupData[{
+Cell[826, 29, 115, 2, 32, "Input"],
+Cell[944, 33, 116, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1097, 41, 116, 2, 32, "Input"],
+Cell[1216, 45, 118, 3, 32, "Output"]
+}, Open  ]],
+Cell[1349, 51, 103, 2, 32, "Input"],
+Cell[1455, 55, 271, 6, 32, "Input"],
+Cell[CellGroupData[{
+Cell[1751, 65, 171, 4, 32, "Input"],
+Cell[1925, 71, 131, 2, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2093, 78, 205, 5, 32, "Input"],
+Cell[2301, 85, 155, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2493, 93, 222, 6, 32, "Input"],
+Cell[2718, 101, 159, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2914, 109, 213, 5, 32, "Input"],
+Cell[3130, 116, 276, 7, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3443, 128, 284, 8, 32, "Input"],
+Cell[3730, 138, 330, 10, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4097, 153, 272, 6, 32, "Input"],
+Cell[4372, 161, 207, 4, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4616, 170, 1029, 26, 32, "Input"],
+Cell[5648, 198, 338, 8, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6023, 211, 190, 4, 32, "Input"],
+Cell[6216, 217, 284, 6, 32, "Output"]
+}, Open  ]],
+Cell[6515, 226, 144, 3, 32, "Input"],
+Cell[6662, 231, 2382, 63, 231, "Input"],
+Cell[CellGroupData[{
+Cell[9069, 298, 324, 6, 32, "Input"],
+Cell[9396, 306, 381, 8, 32, "Output"]
+}, Open  ]],
+Cell[9792, 317, 144, 3, 32, "Input"],
+Cell[9939, 322, 2039, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[12003, 384, 152, 3, 32, "Input"],
+Cell[12158, 389, 326, 9, 32, "Output"]
+}, Open  ]],
+Cell[12499, 401, 146, 3, 32, "Input"],
+Cell[12648, 406, 2041, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[14714, 468, 152, 3, 32, "Input"],
+Cell[14869, 473, 326, 9, 32, "Output"]
+}, Open  ]],
+Cell[15210, 485, 145, 3, 32, "Input"],
+Cell[15358, 490, 2041, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[17424, 552, 201, 4, 32, "Input"],
+Cell[17628, 558, 356, 11, 32, "Output"]
+}, Open  ]],
+Cell[17999, 572, 145, 3, 32, "Input"],
+Cell[18147, 577, 2038, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[20210, 639, 152, 3, 32, "Input"],
+Cell[20365, 644, 331, 10, 32, "Output"]
+}, Open  ]],
+Cell[20711, 657, 144, 3, 32, "Input"],
+Cell[20858, 662, 2041, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[22924, 724, 152, 3, 32, "Input"],
+Cell[23079, 729, 326, 9, 32, "Output"]
+}, Open  ]],
+Cell[23420, 741, 145, 3, 32, "Input"],
+Cell[23568, 746, 2041, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[25634, 808, 156, 3, 32, "Input"],
+Cell[25793, 813, 235, 6, 32, "Output"]
+}, Open  ]],
+Cell[26043, 822, 147, 3, 32, "Input"],
+Cell[26193, 827, 2041, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[28259, 889, 152, 3, 32, "Input"],
+Cell[28414, 894, 328, 9, 32, "Output"]
+}, Open  ]],
+Cell[28757, 906, 149, 3, 32, "Input"],
+Cell[28909, 911, 2043, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[30977, 973, 154, 3, 32, "Input"],
+Cell[31134, 978, 326, 9, 32, "Output"]
+}, Open  ]],
+Cell[31475, 990, 148, 3, 32, "Input"],
+Cell[31626, 995, 2043, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[33694, 1057, 157, 3, 32, "Input"],
+Cell[33854, 1062, 328, 9, 32, "Output"]
+}, Open  ]],
+Cell[34197, 1074, 145, 3, 32, "Input"],
+Cell[34345, 1079, 2040, 58, 231, "Input"],
+Cell[CellGroupData[{
+Cell[36410, 1141, 153, 3, 32, "Input"],
+Cell[36566, 1146, 233, 6, 32, "Output"]
+}, Open  ]]
+}
+]
+*)
+
