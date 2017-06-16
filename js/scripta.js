@@ -25,7 +25,7 @@ var svg2 = d3.select("#mapa").append("svg")
 
 var scalax = d3.scale.ordinal().rangeRoundBands([0,width],0.1);
 var scalay = d3.scale.linear().range([height*0.5,0]).domain([0,100]);
-var scalac = d3.scale.linear().range(["#ffffff","#6600b7"]).domain([0,30]);
+var scalac = d3.scale.linear().range(["#ffffff","#6600b7"]).domain([0,30000]);
 
 d3.json("./datos/edos.json",function(error,data){
 d3.json("./datos/estmun2.json",function(error,poligonos){
@@ -56,7 +56,7 @@ d3.json("./datos/estmun2.json",function(error,poligonos){
 
 	//console.log("edos",data[1])
 	var ndata = data;
-	console.log("ndata",ndata[1].mujeres)
+	console.log("ndata",ndata[1].MujeresSI)
 	// ndata.forEach(function(ele){
 	// 	mapad3.set(ele.edo,ele.mujeres)
 	// });
@@ -66,24 +66,28 @@ d3.json("./datos/estmun2.json",function(error,poligonos){
 		.style("stroke","black")
 		.style("stroke-width",0.5)
 		.style("fill",function(d,i){
-			var temporal = ndata[i].mujeres;
+			var temporal = ndata[i].MujeresSI;
 
 			// var temporal2 = ndata.filter(function(ele){return ele.edo === d.id});
 			// console.log("temporal2",temporal2)
 			// var temporal = temporal2[0].mujeres;
 
 			//var temporal = mapad3.get(d.id);
-			return scalac(temporal*10)});
+			return scalac(temporal)});
 
 
 	function mujeres (d,i) {
-		if (ndata[i].mujeres == 0) {
+		if (ndata[i].MujeresSI == 0) {
 			$(".lightbox").addClass("active")
 			d3.select(".msj")
 			.append("span")
 			.html("En el estado de " + d.id + " no hay mujeres que quieran ser científicas o ingenieras, que tenga entre 18 y 20 años.");
 		} else{
 			$("#d2").addClass("active")
+			d3.select("#percent")
+				.html((ndata[i].MujeresSI*100)/ndata[i].TotalMujeres);
+			d3.select("#title")
+				.html(d.id);
 		};
 	}
 	
@@ -199,4 +203,5 @@ $('.close-button').click(function(){
 })
 $('#back').click(function(){
 	$('#d2').removeClass('active');
+	$('#infoEdo span').empty();
 })

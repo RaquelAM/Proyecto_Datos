@@ -1,130 +1,162 @@
 [
     {
         "edo": "01",
-        "mujeres": 0
+        "TotalMujeres": 0,
+        "MujeresSI": 0
     },
     {
         "edo": "02",
-        "mujeres": 2
+        "TotalMujeres": 98353,
+        "MujeresSI": 27170
     },
     {
         "edo": "03",
-        "mujeres": 0
+        "TotalMujeres": 22145,
+        "MujeresSI": 0
     },
     {
         "edo": "04",
-        "mujeres": 0
+        "TotalMujeres": 56314,
+        "MujeresSI": 0
     },
     {
         "edo": "05",
-        "mujeres": 0
+        "TotalMujeres": 7749,
+        "MujeresSI": 0
     },
     {
         "edo": "06",
-        "mujeres": 2
+        "TotalMujeres": 89852,
+        "MujeresSI": 23750
     },
     {
         "edo": "07",
-        "mujeres": 3
+        "TotalMujeres": 82220,
+        "MujeresSI": 48729
     },
     {
         "edo": "08",
-        "mujeres": 1
+        "TotalMujeres": 17771,
+        "MujeresSI": 17771
     },
     {
         "edo": "09",
-        "mujeres": 1
+        "TotalMujeres": 17345,
+        "MujeresSI": 17345
     },
     {
         "edo": "10",
-        "mujeres": 0
+        "TotalMujeres": 18218,
+        "MujeresSI": 0
     },
     {
         "edo": "11",
-        "mujeres": 0
+        "TotalMujeres": 23330,
+        "MujeresSI": 0
     },
     {
         "edo": "12",
-        "mujeres": 2
+        "TotalMujeres": 74203,
+        "MujeresSI": 34784
     },
     {
         "edo": "13",
-        "mujeres": 0
+        "TotalMujeres": 13473,
+        "MujeresSI": 0
     },
     {
         "edo": "14",
-        "mujeres": 0
+        "TotalMujeres": 0,
+        "MujeresSI": 0
     },
     {
         "edo": "15",
-        "mujeres": 1
+        "TotalMujeres": 80267,
+        "MujeresSI": 14683
     },
     {
         "edo": "16",
-        "mujeres": 0
+        "TotalMujeres": 22205,
+        "MujeresSI": 0
     },
     {
         "edo": "17",
-        "mujeres": 0
+        "TotalMujeres": 66055,
+        "MujeresSI": 0
     },
     {
         "edo": "18",
-        "mujeres": 0
+        "TotalMujeres": 0,
+        "MujeresSI": 0
     },
     {
         "edo": "19",
-        "mujeres": 2
+        "TotalMujeres": 134516,
+        "MujeresSI": 44811
     },
     {
         "edo": "20",
-        "mujeres": 0
+        "TotalMujeres": 35596,
+        "MujeresSI": 0
     },
     {
         "edo": "21",
-        "mujeres": 2
+        "TotalMujeres": 71047,
+        "MujeresSI": 33646
     },
     {
         "edo": "22",
-        "mujeres": 0
+        "TotalMujeres": 0,
+        "MujeresSI": 0
     },
     {
         "edo": "23",
-        "mujeres": 1
+        "TotalMujeres": 26300,
+        "MujeresSI": 23463
     },
     {
         "edo": "24",
-        "mujeres": 1
+        "TotalMujeres": 50415,
+        "MujeresSI": 14165
     },
     {
         "edo": "25",
-        "mujeres": 3
+        "TotalMujeres": 90653,
+        "MujeresSI": 45666
     },
     {
         "edo": "26",
-        "mujeres": 0
+        "TotalMujeres": 69762,
+        "MujeresSI": 0
     },
     {
         "edo": "27",
-        "mujeres": 0
+        "TotalMujeres": 15965,
+        "MujeresSI": 0
     },
     {
         "edo": "28",
-        "mujeres": 3
+        "TotalMujeres": 102065,
+        "MujeresSI": 60354
     },
     {
         "edo": "29",
-        "mujeres": 1
+        "TotalMujeres": 40649,
+        "MujeresSI": 20160
     },
     {
         "edo": "30",
-        "mujeres": 0
+        "TotalMujeres": 21875,
+        "MujeresSI": 0
     },
     {
         "edo": "31",
-        "mujeres": 0
+        "TotalMujeres": 21797,
+        "MujeresSI": 0
     },
     {
         "edo": "32",
-        "mujeres": 5
+        "TotalMujeres": 98027,
+        "MujeresSI": 71598
     }
 ]
