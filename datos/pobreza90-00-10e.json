@@ -1,0 +1,760 @@
+[
+  [
+    {
+      "Nombre": "Aguascalientes",
+      "Extrema": 3.9,
+      "Moderada": 33.7,
+      "Vsocial": 31.4,
+      "Vingreso": 7.5,
+      "Nopobres": 23.5
+    },
+    {
+      "Nombre": "Baja California",
+      "Extrema": 3.4,
+      "Moderada": 22.9,
+      "Vsocial": 43.3,
+      "Vingreso": 5.1,
+      "Nopobres": 25.3
+    },
+    {
+      "Nombre": "Baja California Sur",
+      "Extrema": 2.7,
+      "Moderada": 18.4,
+      "Vsocial": 45.6,
+      "Vingreso": 4.7,
+      "Nopobres": 28.6
+    },
+    {
+      "Nombre": "Campeche",
+      "Extrema": 10.4,
+      "Moderada": 34.3,
+      "Vsocial": 30.2,
+      "Vingreso": 4.8,
+      "Nopobres": 20.3
+    },
+    {
+      "Nombre": "Coahuila",
+      "Extrema": 3.1,
+      "Moderada": 29.8,
+      "Vsocial": 25.9,
+      "Vingreso": 12.3,
+      "Nopobres": 28.9
+    },
+    {
+      "Nombre": "Colima",
+      "Extrema": 1.7,
+      "Moderada": 27.3,
+      "Vsocial": 40.3,
+      "Vingreso": 3.4,
+      "Nopobres": 27.3
+    },
+    {
+      "Nombre": "Chiapas",
+      "Extrema": 35.4,
+      "Moderada": 41.3,
+      "Vsocial": 16.2,
+      "Vingreso": 1.5,
+      "Nopobres": 5.5
+    },
+    {
+      "Nombre": "Chihuahua",
+      "Extrema": 6.5,
+      "Moderada": 25.6,
+      "Vsocial": 35.5,
+      "Vingreso": 7.0,
+      "Nopobres": 25.3
+    },
+    {
+      "Nombre": "Distrito Federal",
+      "Extrema": 2.1,
+      "Moderada": 25.7,
+      "Vsocial": 37.4,
+      "Vingreso": 4.7,
+      "Nopobres": 30.1
+    },
+    {
+      "Nombre": "Durango",
+      "Extrema": 12.1,
+      "Moderada": 37.3,
+      "Vsocial": 24.9,
+      "Vingreso": 7.7,
+      "Nopobres": 17.9
+    },
+    {
+      "Nombre": "Guanajuato",
+      "Extrema": 7.6,
+      "Moderada": 36.2,
+      "Vsocial": 36.7,
+      "Vingreso": 4.4,
+      "Nopobres": 15.1
+    },
+    {
+      "Nombre": "Guerrero",
+      "Extrema": 31.1,
+      "Moderada": 37.1,
+      "Vsocial": 23.1,
+      "Vingreso": 2.1,
+      "Nopobres": 6.7
+    },
+    {
+      "Nombre": "Hidalgo",
+      "Extrema": 15.6,
+      "Moderada": 40.7,
+      "Vsocial": 30.4,
+      "Vingreso": 3.3,
+      "Nopobres": 10.0
+    },
+    {
+      "Nombre": "Jalisco",
+      "Extrema": 4.3,
+      "Moderada": 32.2,
+      "Vsocial": 36.8,
+      "Vingreso": 5.1,
+      "Nopobres": 21.6
+    },
+    {
+      "Nombre": "México",
+      "Extrema": 6.9,
+      "Moderada": 36.8,
+      "Vsocial": 36.3,
+      "Vingreso": 3.9,
+      "Nopobres": 16.0
+    },
+    {
+      "Nombre": "Michoacán",
+      "Extrema": 14.7,
+      "Moderada": 39.8,
+      "Vsocial": 32.3,
+      "Vingreso": 2.5,
+      "Nopobres": 10.6
+    },
+    {
+      "Nombre": "Morelos",
+      "Extrema": 7.8,
+      "Moderada": 40.8,
+      "Vsocial": 34.5,
+      "Vingreso": 3.1,
+      "Nopobres": 13.8
+    },
+    {
+      "Nombre": "Nayarit",
+      "Extrema": 6.4,
+      "Moderada": 36.1,
+      "Vsocial": 34.6,
+      "Vingreso": 4.1,
+      "Nopobres": 18.8
+    },
+    {
+      "Nombre": "Nuevo León",
+      "Extrema": 2.6,
+      "Moderada": 18.9,
+      "Vsocial": 37.4,
+      "Vingreso": 7.0,
+      "Nopobres": 34.1
+    },
+    {
+      "Nombre": "Oaxaca",
+      "Extrema": 27.6,
+      "Moderada": 34.4,
+      "Vsocial": 27.1,
+      "Vingreso": 1.4,
+      "Nopobres": 9.5
+    },
+    {
+      "Nombre": "Puebla",
+      "Extrema": 18.1,
+      "Moderada": 45.9,
+      "Vsocial": 23.2,
+      "Vingreso": 4.0,
+      "Nopobres": 8.8
+    },
+    {
+      "Nombre": "Querétaro",
+      "Extrema": 5.4,
+      "Moderada": 30.0,
+      "Vsocial": 35.6,
+      "Vingreso": 4.9,
+      "Nopobres": 24.1
+    },
+    {
+      "Nombre": "Quintana Roo",
+      "Extrema": 7.6,
+      "Moderada": 28.3,
+      "Vsocial": 38.4,
+      "Vingreso": 4.7,
+      "Nopobres": 21.0
+    },
+    {
+      "Nombre": "San Luis Potosí",
+      "Extrema": 15.2,
+      "Moderada": 35.9,
+      "Vsocial": 25.9,
+      "Vingreso": 6.1,
+      "Nopobres": 16.9
+    },
+    {
+      "Nombre": "Sinaloa",
+      "Extrema": 4.6,
+      "Moderada": 28.1,
+      "Vsocial": 41.2,
+      "Vingreso": 3.4,
+      "Nopobres": 22.7
+    },
+    {
+      "Nombre": "Sonora",
+      "Extrema": 4.2,
+      "Moderada": 22.5,
+      "Vsocial": 39.3,
+      "Vingreso": 4.0,
+      "Nopobres": 30.0
+    },
+    {
+      "Nombre": "Tabasco",
+      "Extrema": 13.2,
+      "Moderada": 40.7,
+      "Vsocial": 34.1,
+      "Vingreso": 2.7,
+      "Nopobres": 9.4
+    },
+    {
+      "Nombre": "Tamaulipas",
+      "Extrema": 5.0,
+      "Moderada": 29.0,
+      "Vsocial": 34.2,
+      "Vingreso": 7.5,
+      "Nopobres": 24.2
+    },
+    {
+      "Nombre": "Tlaxcala",
+      "Extrema": 8.9,
+      "Moderada": 50.8,
+      "Vsocial": 24.4,
+      "Vingreso": 5.4,
+      "Nopobres": 10.6
+    },
+    {
+      "Nombre": "Veracruz",
+      "Extrema": 15.7,
+      "Moderada": 35.0,
+      "Vsocial": 33.2,
+      "Vingreso": 3.1,
+      "Nopobres": 13.0
+    },
+    {
+      "Nombre": "Yucatán",
+      "Extrema": 8.3,
+      "Moderada": 38.2,
+      "Vsocial": 29.8,
+      "Vingreso": 5.1,
+      "Nopobres": 18.6
+    }
+  ],
+  [
+    {
+      "Nombre": "Aguascalientes",
+      "Extrema": 3.6,
+      "Moderada": 34.6,
+      "Vsocial": 26.9,
+      "Vingreso": 8.0,
+      "Nopobres": 26.9
+    },
+    {
+      "Nombre": "Baja California",
+      "Extrema": 3.1,
+      "Moderada": 28.9,
+      "Vsocial": 39.3,
+      "Vingreso": 6.1,
+      "Nopobres": 22.6
+    },
+    {
+      "Nombre": "Baja California Sur",
+      "Extrema": 4.6,
+      "Moderada": 26.3,
+      "Vsocial": 33.5,
+      "Vingreso": 4.5,
+      "Nopobres": 31.1
+    },
+    {
+      "Nombre": "Campeche",
+      "Extrema": 12.0,
+      "Moderada": 38.0,
+      "Vsocial": 25.2,
+      "Vingreso": 4.6,
+      "Nopobres": 20.1
+    },
+    {
+      "Nombre": "Coahuila",
+      "Extrema": 2.9,
+      "Moderada": 25.0,
+      "Vsocial": 26.4,
+      "Vingreso": 12.6,
+      "Nopobres": 33.0
+    },
+    {
+      "Nombre": "Colima",
+      "Extrema": 2.1,
+      "Moderada": 32.6,
+      "Vsocial": 34.0,
+      "Vingreso": 4.9,
+      "Nopobres": 26.4
+    },
+    {
+      "Nombre": "Chiapas",
+      "Extrema": 32.8,
+      "Moderada": 45.6,
+      "Vsocial": 13.1,
+      "Vingreso": 2.5,
+      "Nopobres": 6.0
+    },
+    {
+      "Nombre": "Chihuahua",
+      "Extrema": 6.6,
+      "Moderada": 32.6,
+      "Vsocial": 23.5,
+      "Vingreso": 12.6,
+      "Nopobres": 24.6
+    },
+    {
+      "Nombre": "Distrito Federal",
+      "Extrema": 2.2,
+      "Moderada": 26.6,
+      "Vsocial": 35.5,
+      "Vingreso": 5.2,
+      "Nopobres": 30.5
+    },
+    {
+      "Nombre": "Durango",
+      "Extrema": 10.2,
+      "Moderada": 41.2,
+      "Vsocial": 21.3,
+      "Vingreso": 8.8,
+      "Nopobres": 18.6
+    },
+    {
+      "Nombre": "Guanajuato",
+      "Extrema": 8.1,
+      "Moderada": 40.5,
+      "Vsocial": 29.5,
+      "Vingreso": 5.6,
+      "Nopobres": 16.4
+    },
+    {
+      "Nombre": "Guerrero",
+      "Extrema": 28.8,
+      "Moderada": 38.6,
+      "Vsocial": 23.1,
+      "Vingreso": 2.1,
+      "Nopobres": 7.4
+    },
+    {
+      "Nombre": "Hidalgo",
+      "Extrema": 12.3,
+      "Moderada": 42.5,
+      "Vsocial": 27.9,
+      "Vingreso": 4.0,
+      "Nopobres": 13.3
+    },
+    {
+      "Nombre": "Jalisco",
+      "Extrema": 4.9,
+      "Moderada": 32.0,
+      "Vsocial": 34.3,
+      "Vingreso": 6.1,
+      "Nopobres": 22.7
+    },
+    {
+      "Nombre": "México",
+      "Extrema": 8.1,
+      "Moderada": 34.8,
+      "Vsocial": 33.0,
+      "Vingreso": 5.5,
+      "Nopobres": 18.6
+    },
+    {
+      "Nombre": "Michoacán",
+      "Extrema": 12.7,
+      "Moderada": 42.1,
+      "Vsocial": 28.9,
+      "Vingreso": 4.2,
+      "Nopobres": 12.2
+    },
+    {
+      "Nombre": "Morelos",
+      "Extrema": 6.2,
+      "Moderada": 37.4,
+      "Vsocial": 34.4,
+      "Vingreso": 5.5,
+      "Nopobres": 16.5
+    },
+    {
+      "Nombre": "Nayarit",
+      "Extrema": 7.6,
+      "Moderada": 33.6,
+      "Vsocial": 33.6,
+      "Vingreso": 4.4,
+      "Nopobres": 20.8
+    },
+    {
+      "Nombre": "Nuevo León",
+      "Extrema": 1.9,
+      "Moderada": 19.3,
+      "Vsocial": 33.0,
+      "Vingreso": 8.1,
+      "Nopobres": 37.8
+    },
+    {
+      "Nombre": "Oaxaca",
+      "Extrema": 26.6,
+      "Moderada": 40.5,
+      "Vsocial": 22.1,
+      "Vingreso": 1.4,
+      "Nopobres": 9.3
+    },
+    {
+      "Nombre": "Puebla",
+      "Extrema": 14.9,
+      "Moderada": 46.1,
+      "Vsocial": 21.9,
+      "Vingreso": 5.7,
+      "Nopobres": 11.3
+    },
+    {
+      "Nombre": "Querétaro",
+      "Extrema": 6.9,
+      "Moderada": 34.6,
+      "Vsocial": 32.4,
+      "Vingreso": 4.9,
+      "Nopobres": 21.2
+    },
+    {
+      "Nombre": "Quintana Roo",
+      "Extrema": 4.7,
+      "Moderada": 29.8,
+      "Vsocial": 37.0,
+      "Vingreso": 4.6,
+      "Nopobres": 23.8
+    },
+    {
+      "Nombre": "San Luis Potosí",
+      "Extrema": 14.7,
+      "Moderada": 37.6,
+      "Vsocial": 21.5,
+      "Vingreso": 7.2,
+      "Nopobres": 19.0
+    },
+    {
+      "Nombre": "Sinaloa",
+      "Extrema": 5.1,
+      "Moderada": 31.4,
+      "Vsocial": 33.7,
+      "Vingreso": 7.7,
+      "Nopobres": 22.2
+    },
+    {
+      "Nombre": "Sonora",
+      "Extrema": 5.3,
+      "Moderada": 28.6,
+      "Vsocial": 32.7,
+      "Vingreso": 6.4,
+      "Nopobres": 27.1
+    },
+    {
+      "Nombre": "Tabasco",
+      "Extrema": 11.0,
+      "Moderada": 46.2,
+      "Vsocial": 27.4,
+      "Vingreso": 4.1,
+      "Nopobres": 11.3
+    },
+    {
+      "Nombre": "Tamaulipas",
+      "Extrema": 5.5,
+      "Moderada": 33.8,
+      "Vsocial": 27.9,
+      "Vingreso": 9.0,
+      "Nopobres": 23.7
+    },
+    {
+      "Nombre": "Tlaxcala",
+      "Extrema": 9.2,
+      "Moderada": 51.2,
+      "Vsocial": 19.9,
+      "Vingreso": 7.2,
+      "Nopobres": 12.5
+    },
+    {
+      "Nombre": "Veracruz",
+      "Extrema": 18.1,
+      "Moderada": 40.1,
+      "Vsocial": 24.1,
+      "Vingreso": 4.3,
+      "Nopobres": 13.3
+    },
+    {
+      "Nombre": "Yucatán",
+      "Extrema": 9.8,
+      "Moderada": 38.1,
+      "Vsocial": 25.9,
+      "Vingreso": 6.9,
+      "Nopobres": 19.4
+    }
+  ],
+  [
+    {
+      "Nombre": "Aguascalientes",
+      "Extrema": 3.4,
+      "Moderada": 34.4,
+      "Vsocial": 24.5,
+      "Vingreso": 10.1,
+      "Nopobres": 27.6
+    },
+    {
+      "Nombre": "Baja California",
+      "Extrema": 2.7,
+      "Moderada": 27.5,
+      "Vsocial": 37.6,
+      "Vingreso": 8.6,
+      "Nopobres": 23.5
+    },
+    {
+      "Nombre": "Baja California Sur",
+      "Extrema": 3.7,
+      "Moderada": 26.4,
+      "Vsocial": 30.0,
+      "Vingreso": 7.9,
+      "Nopobres": 32.0
+    },
+    {
+      "Nombre": "Campeche",
+      "Extrema": 10.4,
+      "Moderada": 34.2,
+      "Vsocial": 28.6,
+      "Vingreso": 5.6,
+      "Nopobres": 21.2
+    },
+    {
+      "Nombre": "Coahuila",
+      "Extrema": 3.2,
+      "Moderada": 24.7,
+      "Vsocial": 24.4,
+      "Vingreso": 12.7,
+      "Nopobres": 34.9
+    },
+    {
+      "Nombre": "Colima",
+      "Extrema": 4.0,
+      "Moderada": 30.4,
+      "Vsocial": 31.7,
+      "Vingreso": 6.3,
+      "Nopobres": 27.6
+    },
+    {
+      "Nombre": "Chiapas",
+      "Extrema": 32.2,
+      "Moderada": 42.5,
+      "Vsocial": 17.2,
+      "Vingreso": 1.7,
+      "Nopobres": 6.4
+    },
+    {
+      "Nombre": "Chihuahua",
+      "Extrema": 3.8,
+      "Moderada": 31.5,
+      "Vsocial": 27.4,
+      "Vingreso": 10.7,
+      "Nopobres": 26.6
+    },
+    {
+      "Nombre": "Distrito Federal",
+      "Extrema": 2.5,
+      "Moderada": 26.4,
+      "Vsocial": 32.4,
+      "Vingreso": 6.6,
+      "Nopobres": 32.1
+    },
+    {
+      "Nombre": "Durango",
+      "Extrema": 7.5,
+      "Moderada": 42.6,
+      "Vsocial": 21.8,
+      "Vingreso": 11.1,
+      "Nopobres": 17.0
+    },
+    {
+      "Nombre": "Guanajuato",
+      "Extrema": 6.9,
+      "Moderada": 37.6,
+      "Vsocial": 32.6,
+      "Vingreso": 4.9,
+      "Nopobres": 18.1
+    },
+    {
+      "Nombre": "Guerrero",
+      "Extrema": 31.7,
+      "Moderada": 38.0,
+      "Vsocial": 21.7,
+      "Vingreso": 2.3,
+      "Nopobres": 6.4
+    },
+    {
+      "Nombre": "Hidalgo",
+      "Extrema": 10.0,
+      "Moderada": 42.8,
+      "Vsocial": 30.7,
+      "Vingreso": 3.0,
+      "Nopobres": 13.5
+    },
+    {
+      "Nombre": "Jalisco",
+      "Extrema": 5.8,
+      "Moderada": 34.0,
+      "Vsocial": 28.3,
+      "Vingreso": 8.1,
+      "Nopobres": 23.8
+    },
+    {
+      "Nombre": "México",
+      "Extrema": 5.8,
+      "Moderada": 39.5,
+      "Vsocial": 29.5,
+      "Vingreso": 7.8,
+      "Nopobres": 17.4
+    },
+    {
+      "Nombre": "Michoacán",
+      "Extrema": 14.4,
+      "Moderada": 39.9,
+      "Vsocial": 30.7,
+      "Vingreso": 3.5,
+      "Nopobres": 11.5
+    },
+    {
+      "Nombre": "Morelos",
+      "Extrema": 6.3,
+      "Moderada": 39.1,
+      "Vsocial": 32.0,
+      "Vingreso": 4.6,
+      "Nopobres": 17.9
+    },
+    {
+      "Nombre": "Nayarit",
+      "Extrema": 11.9,
+      "Moderada": 35.7,
+      "Vsocial": 28.2,
+      "Vingreso": 5.6,
+      "Nopobres": 18.6
+    },
+    {
+      "Nombre": "Nuevo León",
+      "Extrema": 2.4,
+      "Moderada": 20.8,
+      "Vsocial": 29.1,
+      "Vingreso": 8.4,
+      "Nopobres": 39.2
+    },
+    {
+      "Nombre": "Oaxaca",
+      "Extrema": 23.3,
+      "Moderada": 38.6,
+      "Vsocial": 26.1,
+      "Vingreso": 1.7,
+      "Nopobres": 10.3
+    },
+    {
+      "Nombre": "Puebla",
+      "Extrema": 17.6,
+      "Moderada": 46.9,
+      "Vsocial": 22.0,
+      "Vingreso": 4.2,
+      "Nopobres": 9.4
+    },
+    {
+      "Nombre": "Querétaro",
+      "Extrema": 5.2,
+      "Moderada": 31.8,
+      "Vsocial": 32.6,
+      "Vingreso": 6.4,
+      "Nopobres": 24.0
+    },
+    {
+      "Nombre": "Quintana Roo",
+      "Extrema": 8.4,
+      "Moderada": 30.4,
+      "Vsocial": 30.4,
+      "Vingreso": 6.2,
+      "Nopobres": 24.6
+    },
+    {
+      "Nombre": "San Luis Potosí",
+      "Extrema": 12.8,
+      "Moderada": 37.7,
+      "Vsocial": 24.7,
+      "Vingreso": 6.6,
+      "Nopobres": 18.3
+    },
+    {
+      "Nombre": "Sinaloa",
+      "Extrema": 4.5,
+      "Moderada": 31.8,
+      "Vsocial": 33.5,
+      "Vingreso": 6.4,
+      "Nopobres": 23.8
+    },
+    {
+      "Nombre": "Sonora",
+      "Extrema": 5.0,
+      "Moderada": 24.2,
+      "Vsocial": 36.6,
+      "Vingreso": 4.7,
+      "Nopobres": 29.6
+    },
+    {
+      "Nombre": "Tabasco",
+      "Extrema": 14.3,
+      "Moderada": 35.4,
+      "Vsocial": 34.0,
+      "Vingreso": 3.0,
+      "Nopobres": 13.4
+    },
+    {
+      "Nombre": "Tamaulipas",
+      "Extrema": 4.7,
+      "Moderada": 33.7,
+      "Vsocial": 26.8,
+      "Vingreso": 8.8,
+      "Nopobres": 26.0
+    },
+    {
+      "Nombre": "Tlaxcala",
+      "Extrema": 9.1,
+      "Moderada": 48.8,
+      "Vsocial": 23.9,
+      "Vingreso": 6.0,
+      "Nopobres": 12.2
+    },
+    {
+      "Nombre": "Veracruz",
+      "Extrema": 14.3,
+      "Moderada": 38.4,
+      "Vsocial": 30.6,
+      "Vingreso": 4.0,
+      "Nopobres": 12.8
+    },
+    {
+      "Nombre": "Yucatán",
+      "Extrema": 9.8,
+      "Moderada": 39.0,
+      "Vsocial": 27.0,
+      "Vingreso": 6.3,
+      "Nopobres": 17.9
+    },
+    {
+      "Nombre": "Zacatecas",
+      "Extrema": 9.9,
+      "Moderada": 39.0,
+      "Vsocial": 27.0,
+      "Vingreso": 6.3,
+      "Nopobres": 17.9
+    }
+  ]
+]
