@@ -1,4 +1,4 @@
-var w1 = d3.select("#d2").style("width");
+var w1 = d3.select("#mapa").style("width");
 var width = parseInt(w1,10);
 var height = width * 0.65;
 
@@ -18,14 +18,14 @@ var svg = d3.select("#d2").append("svg")
 			.attr("width",width)
 			.attr("height",height);
 
-var svg2 = d3.select("#d3").append("svg")
+var svg2 = d3.select("#mapa").append("svg")
 			.attr("width",width)
 			.attr("height",height)
 			.append("g").attr("class","mapa");
 
 var scalax = d3.scale.ordinal().rangeRoundBands([0,width],0.1);
 var scalay = d3.scale.linear().range([height*0.5,0]).domain([0,100]);
-var scalac = d3.scale.linear().range(["#ffffff","#756BB1"]).domain([0,30]);
+var scalac = d3.scale.linear().range(["#ffffff","#6600b7"]).domain([0,30]);
 
 d3.json("./datos/edos.json",function(error,data){
 d3.json("./datos/estmun2.json",function(error,poligonos){
@@ -83,7 +83,7 @@ d3.json("./datos/estmun2.json",function(error,poligonos){
 			.append("span")
 			.html("En el estado de " + d.id + " no hay mujeres que quieran ser científicas o ingenieras, que tenga entre 18 y 20 años.");
 		} else{
-			console.log("si me interesa")
+			$("#d2").addClass("active")
 		};
 	}
 	
@@ -192,8 +192,11 @@ d3.json("./datos/estmun2.json",function(error,poligonos){
 })
 
 
-//Cerrar lightbox
+//Cerrar lightbox y seccion graficas
 $('.close-button').click(function(){
 	$('.lightbox').removeClass('active');
 	$('.msj span').remove();
+})
+$('#back').click(function(){
+	$('#d2').removeClass('active');
 })
