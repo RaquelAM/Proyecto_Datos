@@ -134,6 +134,12 @@ header div{
 	font-size: 35px;
     color: white;
 }
+#jovenes{
+	margin-top: 30px;
+}
+#jovenes .tit{
+	font-size: 18px;
+}
 #back{
 	display: inline-block;
     position: absolute;
